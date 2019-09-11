@@ -66,3 +66,22 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+### Code Standard 
+
+|| React | example |
+| ------ | ------ | ------ | 
+| Class| Pascal | ExampleProduct |
+| Function | Camel | exampleProduct |
+| Variable| Camel | exampleProduct |
+| Config variable env | UPPERCASE with _ | EXAMPLE_PRODUCT |
+| String | single quote | 'ExampleProduct' |
+| Filename | Camel | exampleProduct.js |
+| Test File name | *.test.js | exampleProduct.test.js |
+| semicolon | None | |
+| Line per fucntion | <20 |  |
+| Indent | 2 | |
+| Repository | 1 Repo | |
+| Folder | Pascal | ExampleProduct |
+| commit format| verb v.2 + feature name + description | added + select toy + create function |
