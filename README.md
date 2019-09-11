@@ -49,7 +49,7 @@ Folder Structure Conventions
     │       ├── app
     │       │   ├── models
     │       │   │   └── <table-name>.py
-    │       │   └── <domain>
+    │       │   └── <domain-name>
     │       │        ├── controller.py
     │       │        ├── model.py
     │       │        ├── route.py
