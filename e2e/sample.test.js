@@ -23,7 +23,7 @@ describe('As a user I can sign in', () => {
   })
 
   it('should load without error', async done => {
-    await page.goto('http://localhost:3000')
+    await page.goto('https://google.com')
     done()
   }, 30000)
 }
