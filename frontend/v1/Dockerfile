@@ -1,16 +1,27 @@
 # base image
-FROM node:8.12.0
+FROM node:8.12.0 as dev
 
 # set working directory
-RUN mkdir /usr/src/app
-WORKDIR /usr/src/app
+WORKDIR /app
 
-# add `/usr/src/app/node_modules/.bin` to $PATH
-ENV PATH /usr/src/app/node_modules/.bin:$PATH
 
 # install and cache app dependencies
-COPY . /usr/src/app
-RUN npm install
-RUN npm run test
+COPY package.json package.json
+RUN npm install 
+
+
+
+# RUN npm install react-scripts@3.0.1 -g --silent
+
 # start app
-CMD ["npm", "start"]
+# CMD ["npm", "start"]
+COPY . /app
+RUN npm run test
+RUN npm run build
+
+
+# production environment
+FROM nginx:1.16.0-alpine
+COPY --from=dev /app/build /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]

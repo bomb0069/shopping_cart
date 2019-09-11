@@ -1,0 +1,15 @@
+version: '2'
+services:
+    3rdparty:
+      build:
+          context: ./
+      ports:
+          - "11:5000"
+      volumes:
+          - ./:/code
+      restart: always
+      environment:
+        - LISTEN_PORT=5000
+        - UWSGI_INI=/code/uwsgi/uwsgi.ini
+        - PYTHONPATH=/code/app
+      

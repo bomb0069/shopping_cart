@@ -1,8 +1,16 @@
 version: '2'
+
 services:
-    frontend-v1:
-      build:
-          context: ./
-      ports:
-          - "3000:3000"
-      restart: always
+
+  test:
+    container_name: test
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    ports:
+      - '80:80'
+    environment:
+      - NODE_ENV=development
