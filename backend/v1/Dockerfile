@@ -2,6 +2,5 @@ FROM python:3.7
 COPY . /app
 WORKDIR /app
 RUN pip install -r requirements.txt
-ENTRYPOINT ["python"]
-CMD ["manage.py","test"]
-CMD ["run"]
+RUN python manage.py test
+CMD ["python","manage.py"]
