@@ -1,6 +1,5 @@
 ### Code Standard
 
-description : 
 || Python | example |
 | ------ | ------ | ------ | 
 | Class| Pascal | ExampleProduct |
