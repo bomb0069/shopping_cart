@@ -3,4 +3,4 @@ COPY . /app
 WORKDIR /app
 RUN pip install -r requirements.txt
 RUN python manage.py test
-CMD ["python","manage.py"]
+CMD ["python","manage.py", "runserver"]
