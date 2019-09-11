@@ -11,12 +11,15 @@ Folder Structure Conventions
     ├── docker-compose.yml                   
     ├── frontend                          
     │   └── v1
-    │       ├── public
+    │       ├── Dockerfile
     │       ├── src
     │       │   ├── helpers
     │       │   ├── views
+    │       │   │   └── <view-name>
+    │       │   │        ├── index.jsx
+    │       │   │        └── styles.js
     │       │   ├── modules
-    │       │   │   ├── <domain>
+    │       │   │   ├── <domain-name>
     │       │   │   │    ├── index.jsx
     │       │   │   │    ├── styles.js
     │       │   │   │    └── testIndex.jsx
@@ -33,14 +36,14 @@ Folder Structure Conventions
     │       │   ├── index.js
     │       │   ├── Routes.jsx
     │       │   └── stores.js
-    │       ├── Dockerfile
+    │       ├── public
     │       ├── jest.test.config
     │       ├── package.json
     │       └── setupTests.js
     ├── backend              
     │   └── v1
-    │       ├── tests
     │       ├── Dockerfile
+    │       ├── tests
     │       ├── uwsgi
     │       │   └── uwsgi.ini
     │       ├── app
