@@ -2,7 +2,13 @@ from flask import Blueprint
 
 auth_blueprint = Blueprint('auth_blueprint', __name__, url_prefix='/auth')
 
-
-@auth_blueprint.route('/token')
-def validateToken():
-    return "Hello", 200
+@auth_blueprint.route('/token/<token>')
+def validateToken(token):
+    # TODO: query user data by token
+    return jsonify(data={
+        user_id: '1',
+        name: 'Rittichai Timrattanakul',
+        phone: '0944866055',
+        address: '114 เพชรเกษม48 บางด้วน ภาษีเจริญ กทม 10160',
+        email: 'timrattanakul@gmail.com'
+    }), 200
