@@ -1,11 +1,15 @@
 from flask_script import Manager
 import unittest
 from flask import Flask
-
-app = Flask(__name__)
+from app import create_app
+# app = Flask(__name__)
 # configure your app
 
-manager = Manager(app)
+manager = Manager(create_app)
+
+# @app.route('/token')
+# def hello():
+#     return "hello"
 
 @manager.command
 def test():
