@@ -8,8 +8,8 @@ Folder Structure Conventions
 ### A typical top-level directory layout
 
     .
-    ├── docker-compose.yml                   # Compiled files (alternatively `dist`)
-    ├── frontend                          # Documentation files (alternatively `doc`)
+    ├── docker-compose.yml                   
+    ├── frontend                          
     │   └── v1
     │       ├── public
     │       ├── src
@@ -39,33 +39,22 @@ Folder Structure Conventions
     │       └── setupTests.js
     ├── backend              
     │   └── v1
-    │       ├── public
-    │       ├── src
-    │       │   ├── helpers
-    │       │   ├── views
-    │       │   ├── modules
-    │       │   │   ├── <domain>
-    │       │   │   │    ├── index.jsx
-    │       │   │   │    ├── styles.js
-    │       │   │   │    └── testIndex.jsx
-    │       │   │   └── common
-    │       │   │       └── <components-name>
-    │       │   │            ├── index.jsx
-    │       │   │            ├── styles.js
-    │       │   │            └── testIndex.jsx
-    │       │   ├── middlewares
-    │       │   ├── theme
-    │       │   ├── App.jsx
-    │       │   ├── sagas.js
-    │       │   ├── reducers.js
-    │       │   ├── index.js
-    │       │   ├── Routes.jsx
-    │       │   └── stores.js
+    │       ├── tests
     │       ├── Dockerfile
-    │       ├── jest.test.config
-    │       ├── package.json
-    │       └── setupTests.js
-    ├── mockserver                    # Automated tests (alternatively `spec` or `tests`)
+    │       ├── uwsgi
+    │       │   └── uwsgi.ini
+    │       ├── app
+    │       │   ├── models
+    │       │   │   └── <table-name>.py
+    │       │   └── <domain>
+    │       │        ├── controller.py
+    │       │        ├── model.py
+    │       │        ├── route.py
+    │       │        └── form.py
+    │       ├── manage.py
+    │       ├── config.py
+    │       └── requirements.txt
+    ├── mockserver                    
     └── README.md
 
 > Use short lowercase names at least for the top-level files and folders except
