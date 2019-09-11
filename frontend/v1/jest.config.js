@@ -1,18 +1,7 @@
 module.exports = {
-  "roots": [
-    "<rootDir>"
-  ],
-  "transform": {
-    "\\.js$": "<rootDir>/node_modules/babel-jest"
-  },
-  "testRegex": "(/tests/.*|(\\.|/)(test|spec))\\.js?",
-  "moduleFileExtensions": [
-    "ts",
-    "tsx",
-    "js",
-    "jsx",
-    "json",
-    "node"
-  ],
-  "snapshotSerializers": ["enzyme-to-json/serializer"],
+  moduleDirectories: ['node_modules', 'src'],
+  setupFilesAfterEnv: ['./setupTests.js'],
+  moduleNameMapper: {
+    '\\.(scss|sass|css|svg)$': 'identity-obj-proxy'
+  }
 }
