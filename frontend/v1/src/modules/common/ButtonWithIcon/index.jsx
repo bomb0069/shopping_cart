@@ -3,7 +3,7 @@ import styles from './styles'
 import { withStyles, IconButton, Badge } from '@material-ui/core'
 import { ShoppingCart as ShoppingCartIcon } from '@material-ui/icons'
 
-const buttonWithIcon = ({ classes, id, amount, icon, onClick }) => {
+const ButtonWithIcon = ({ classes, id, amount, icon, onClick }) => {
   return (
     <IconButton 
       id={id}
@@ -22,5 +22,5 @@ const buttonWithIcon = ({ classes, id, amount, icon, onClick }) => {
   )
 }
 
-export default withStyles(styles)(buttonWithIcon)
+export default withStyles(styles)(ButtonWithIcon)
 

@@ -92,7 +92,10 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 | ------ | ------ |
 | ButtonWithIcon | id={'add-icon'}, amount={0}, onClick={handleFunction}, icon={<Add/>} |
 | SearchInput | id={'search-field'}, value={'Princess Palace'}, handleClick={handleClick}, handleChange={handleChange}, classes={classes}|
-| SelectWithDropdown | id={age-simple} |
+| SelectWithDropdown | id={age-simple}, handleChange={handleAgeChange}, value={age} |
+<<<<<<< HEAD
+| Header | id={header-simple}, amount={0} |
+=======
 
 # Stub Server 
 Get a full fake REST API with zero coding in less than 30 seconds (seriously)
@@ -123,3 +126,4 @@ Now if you go to http://localhost:3000/carts?user_id=1, you'll get
     ]
 }
 ```
+>>>>>>> c46f99ae78698bde77a8a4ac03faceccdaf5f0ab

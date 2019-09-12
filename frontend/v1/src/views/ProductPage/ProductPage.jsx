@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Header from '../../modules/common/Header'
 import ProductList from '../../modules/products/components/ProductList'
 
 const ProductPage = ({
@@ -7,7 +7,9 @@ const ProductPage = ({
 }) => {
 
   return (
-    <div />
+    <div>
+      <Header />
+    </div>
   )
 }
 

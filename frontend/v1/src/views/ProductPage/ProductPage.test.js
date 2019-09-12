@@ -3,7 +3,7 @@ import { shallow } from 'enzyme'
 
 import ProductPage from './ProductPage'
 
-describe('<ProductList />', () => {
+describe('<ProductPage />', () => {
     let component
   
     beforeEach(() => {
