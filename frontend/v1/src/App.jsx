@@ -7,7 +7,7 @@ import { Router } from 'react-router-dom'
 import {
   createBrowserHistory
 } from 'history'
-
+import { getShoppingCart } from './modules/shoppingCart/actions'
 
 function App({ data }) {
   console.log('props', data)
@@ -20,4 +20,4 @@ function App({ data }) {
   )
 }
 
-export default WithShoppingCart(App);
+export default WithShoppingCart(App, getShoppingCart);
