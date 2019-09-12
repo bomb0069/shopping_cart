@@ -24,7 +24,7 @@ const searchInput = ({
             type="search"
             fullWidth
             className={classes.textField}
-            onChang={handleChange}
+            onChange={handleChange}
             value={value}
             margin="normal"
             variant="outlined"
