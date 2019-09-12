@@ -92,5 +92,38 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 | ------ | ------ |
 | ButtonWithIcon | id={'add-icon'}, amount={0}, onClick={handleFunction}, icon={<Add/>} |
 | SearchInput | id={'search-field'}, value={'Princess Palace'}, handleClick={handleClick}, handleChange={handleChange}, classes={classes}|
-| SelectWithDropdown | id={age-simple} |
+| SelectWithDropdown | id={age-simple}, handleChange={handleAgeChange}, value={age} |
+<<<<<<< HEAD
 | Header | id={header-simple}, amount={0} |
+=======
+
+# Stub Server 
+Get a full fake REST API with zero coding in less than 30 seconds (seriously)
+
+Created with for front-end developers who need a quick back-end for prototyping and mocking
+
+### Install JSON Server
+```
+npm install -g json-server
+```
+### Start JSON Server
+```
+cd frontend/v1/tests/mockServer
+json-server --watch db.json --routes routes.json
+```
+
+### Example
+Now if you go to http://localhost:3000/carts?user_id=1, you'll get
+```
+{
+    "user_id": 1,
+    "items": [
+        {
+            "product_id": 6,
+            "product_name": "Princess Palace",
+            "product_price": 24.95
+        }
+    ]
+}
+```
+>>>>>>> c46f99ae78698bde77a8a4ac03faceccdaf5f0ab
