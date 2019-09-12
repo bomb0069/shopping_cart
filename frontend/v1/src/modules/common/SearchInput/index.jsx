@@ -8,11 +8,10 @@ import {
 import style from './styles'
 import SearchIcon from '@material-ui/icons/Search'
 
-const SearchInput = ({
+const searchInput = ({
   classes,
   handleChange,
   handleClick,
-  handleButtonClick,
   value,
   id
 }) => {
@@ -25,7 +24,7 @@ const SearchInput = ({
             type="search"
             fullWidth
             className={classes.textField}
-            onChange={handleChange}
+            onChang={handleChange}
             value={value}
             margin="normal"
             variant="outlined"
@@ -35,7 +34,7 @@ const SearchInput = ({
           <IconButton 
             color="primary" 
             className={classes.button}
-            onClick={handleButtonClick}
+            onClick={handleClick}
           >
             <SearchIcon />
           </IconButton>
@@ -44,4 +43,4 @@ const SearchInput = ({
     )
 }
 
-export default withStyles(style)(SearchInput)
+export default withStyles(style)(searchInput)

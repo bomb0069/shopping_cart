@@ -1,14 +1,22 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Header from './modules/common/Header'
+import Routes from './Routes'
+import { Router } from 'react-router-dom'
+import {
+  createBrowserHistory
+} from 'history'
+
+import WithShoppingCart from './modules/shoppingCart/hoc/withShoppingCart'
 
 function App() {
   return (
-    <div>
-      <Header/>
-    </div>
-  );
+    <>
+      <Router history={createBrowserHistory()}>
+        <Routes />
+      </Router>
+    </>
+  )
 }
 
 export default App;
