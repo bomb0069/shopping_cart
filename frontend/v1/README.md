@@ -91,3 +91,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 | Component | props |
 | ------ | ------ |
 | ButtonWithIcon | id={'add-icon'}, amount={0}, onClick={handleFunction}, icon={<Add/>} |
+| SearchInput | id={'search-field'}, value={'Princess Palace'}, handleClick={handleClick}, handleChange={handleChange}, classes={classes}|
+| SelectWithDropdown | id={age-simple} |
