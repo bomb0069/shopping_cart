@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProductCard /> should render with an image 1`] = `ShallowWrapper {}`;
+
+exports[`<ProductCard /> should render with name, gender, age 1`] = `ShallowWrapper {}`;
+
+exports[`<ProductCard /> should render with no errors 1`] = `ShallowWrapper {}`;
+
+exports[`<ProductCard /> should render with price and availability 1`] = `ShallowWrapper {}`;
