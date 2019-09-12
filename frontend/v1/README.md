@@ -85,3 +85,11 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 | Repository | 1 Repo | |
 | Folder | Pascal | ExampleProduct |
 | commit format| verb v.2 + feature name + description | added + select toy + create function |
+
+### How to Use Common Component
+
+| Component | props |
+| ------ | ------ |
+| ButtonWithIcon | id={'add-icon'}, amount={0}, onClick={handleFunction}, icon={<Add/>} |
+| SearchInput | id={'search-field'}, value={'Princess Palace'}, handleClick={handleClick}, handleChange={handleChange}, classes={classes}|
+| SelectWithDropdown | id={age-simple} |

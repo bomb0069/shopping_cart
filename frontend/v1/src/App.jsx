@@ -1,8 +1,10 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import WithShoppingCart from './modules/shoppingCart/hoc/withShoppingCart'
 
-function App() {
+function App({ data }) {
+  console.log('props', data)
   return (
     <div className="App">
       <header className="App-header">
@@ -23,4 +25,4 @@ function App() {
   );
 }
 
-export default App;
+export default WithShoppingCart(App);
