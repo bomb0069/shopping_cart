@@ -1,7 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import WithShoppingCart from './modules/shoppingCart/hoc/withShoppingCart'
 import Routes from './Routes'
 import { Router } from 'react-router-dom'
 import {
@@ -9,8 +8,9 @@ import {
 } from 'history'
 import { getShoppingCart } from './modules/shoppingCart/actions'
 
-function App({ data }) {
-  console.log('props', data)
+import WithShoppingCart from './modules/shoppingCart/hoc/withShoppingCart'
+
+function App() {
   return (
     <>
       <Router history={createBrowserHistory()}>
@@ -20,4 +20,8 @@ function App({ data }) {
   )
 }
 
+<<<<<<< HEAD
 export default WithShoppingCart(App, getShoppingCart);
+=======
+export default App;
+>>>>>>> 88d1237377ef471866c478db344b1a4254949968

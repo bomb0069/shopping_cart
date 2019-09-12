@@ -19,28 +19,19 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function SelectWithDropdown() {
+export default function SelectWithDropdown({
+  handleChange,
+  value
+}) {
   const classes = useStyles();
-  const [values, setValues] = React.useState({
-    age: '',
-    name: 'hai',
-  });
-
   
-  
-  function handleChange(event) {
-    setValues(oldValues => ({
-      ...oldValues,
-      [event.target.name]: event.target.value,
-    }));
-  }
 
   return (
     <form className={classes.root} autoComplete="off">
       <FormControl className={classes.formControl}>
         <InputLabel htmlFor="age-simple">Age</InputLabel>
         <Select
-          value={values.age}
+          value={value}
           onChange={handleChange}
           inputProps={{
             name: 'age',
