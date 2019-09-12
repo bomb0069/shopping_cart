@@ -20,8 +20,4 @@ function App() {
   )
 }
 
-<<<<<<< HEAD
 export default WithShoppingCart(App, getShoppingCart);
-=======
-export default App;
->>>>>>> 88d1237377ef471866c478db344b1a4254949968
