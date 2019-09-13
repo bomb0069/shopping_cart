@@ -12,9 +12,10 @@ const launchConfig = {
 describe('As a user I can sign in', () => {
   let page
   let browser
-  beforeAll(async () => {
+  beforeEach(async () => {
     browser = await puppeteer.launch(launchConfig)
     page = await browser.newPage()
+    
   }, 30000)
 
   afterAll(async () => {

@@ -5,8 +5,9 @@ import {
   IconButton,
   Grid
 } from '@material-ui/core'
-import style from './styles'
 import SearchIcon from '@material-ui/icons/Search'
+
+import styles from './styles'
 
 const SearchInput = ({
   classes,
@@ -44,4 +45,4 @@ const SearchInput = ({
     )
 }
 
-export default withStyles(style)(SearchInput)
+export default withStyles(styles)(SearchInput)

@@ -1,0 +1,6 @@
+{
+  "filter": {
+    "age": ["baby", "Toddler", "3_to_5", "6_to_8", "over8"],
+    "gender": ["Female", "Male", "Neutral", ""]
+  }
+}
