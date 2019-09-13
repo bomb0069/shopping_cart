@@ -1,5 +1,5 @@
 export default () => ({
-    root: {
-      width: '100%'
-    }
+  root: {
+    width: '100%'
+  }
 })

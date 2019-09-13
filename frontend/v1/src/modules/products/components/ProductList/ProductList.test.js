@@ -21,7 +21,7 @@ describe('<ProductList />', () => {
     const productItems = [
       {
         id: 6,
-        name: "Princess Palace",
+        name: 'Princess Palace',
         price: 24.95,
         brand: 'Coolkidz',
         age: '3_to_5',
@@ -30,7 +30,7 @@ describe('<ProductList />', () => {
       },
       {
         id: 15,
-        name: "Sailboat",
+        name: 'Sailboat',
         price: 24.95,
         brand: 'Coolkidz',
         age: 'over8',
