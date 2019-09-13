@@ -3,7 +3,7 @@ import React from 'react'
 import Grid from '@material-ui/core/Grid'
 
 const ProductCard = ({
-  imgUrl,
+  imgUrl = 'https://www.mockuptiger.com/wp-content/uploads/2018/03/image-666.jpg',
   name,
   gender,
   age,
