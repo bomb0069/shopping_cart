@@ -4,7 +4,7 @@ import ProductList from '../../modules/products/components/ProductList'
 import {getProduct} from './actions'
 
 
-const ProductPage = ({ classes, history }) => {
+const ProductPage = ({ classes, history, userShoppingCart, filters }) => {
  
   const [products,setProducts] = useState([])
   useEffect(() => {
@@ -30,7 +30,7 @@ const ProductPage = ({ classes, history }) => {
   }
   return (
     <div>
-      <Header handleSubmit={handleSubmit} amount={0}/>
+      <Header filters={filters} handleSubmit={handleSubmit} amount={userShoppingCart && userShoppingCart.items && userShoppingCart.items.length}/>
       <ProductList className={classes.root} productItems={products}/>
     </div>
   )

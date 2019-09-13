@@ -21,11 +21,11 @@ const useStyles = makeStyles(theme => ({
 
 export default function SelectWithDropdown({
   handleChange,
-  value
+  value,
+  items = []
 }) {
   const classes = useStyles();
   
-
   return (
     <form className={classes.root} autoComplete="off">
       <FormControl className={classes.formControl}>
@@ -37,12 +37,11 @@ export default function SelectWithDropdown({
             name: 'age',
             id: 'age-simple',
           }}
-        >
-          <MenuItem value={"3-5"}>3-5</MenuItem>
-          <MenuItem value={"6-8"}>6-8</MenuItem>
-          <MenuItem value={"over8"}>over8</MenuItem>
-          <MenuItem value={"Baby"}>Baby</MenuItem>
-          <MenuItem value={"Toddler"}>Toddler</MenuItem>
+        >{
+          items.map((item)=>{
+            return <MenuItem key={item} value={item}>{item}</MenuItem>
+          })
+        }
         </Select>
       </FormControl>
       </form>

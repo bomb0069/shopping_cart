@@ -2,6 +2,11 @@ import React, { Component } from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
 import ProductCard from './modules/products/components/ProductDetailCard'
 
+import { getShoppingCart, getFilters } from './modules/shoppingCart/actions'
+
+import withShoppingCart from './modules/shoppingCart/hoc/withShoppingCart'
+
+// Views
 import ProductPage from './views/ProductPage'
 import SearchResultsPage from './views/SearchResultsPage'
 
@@ -10,12 +15,12 @@ export default class Routes extends Component {
     return (
       <Switch>
         <Route
-          component={ProductPage}
+          component={withShoppingCart(ProductPage, getShoppingCart, getFilters)}
           exact
           path="/product"
         />
         <Route
-          component={ProductCard}
+          component={withShoppingCart(ProductCard, getShoppingCart, getFilters)}
           exact
           path="/productFilter"
         />

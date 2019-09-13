@@ -14,7 +14,7 @@ const ProductList = ({
           item
           xs={12}
           sm={4}
-          key={item.id}
+          key={item.product_id}
         >
           <ProductCard
             
