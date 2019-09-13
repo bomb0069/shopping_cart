@@ -93,9 +93,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 | ButtonWithIcon | id={'add-icon'}, amount={0}, onClick={handleFunction}, icon={<Add/>} |
 | SearchInput | id={'search-field'}, value={'Princess Palace'}, handleClick={handleClick}, handleChange={handleChange}, classes={classes}|
 | SelectWithDropdown | id={age-simple}, handleChange={handleAgeChange}, value={age} |
-<<<<<<< HEAD
 | Header | id={header-simple}, amount={0} |
-=======
 
 # Stub Server 
 Get a full fake REST API with zero coding in less than 30 seconds (seriously)
@@ -126,4 +124,46 @@ Now if you go to http://localhost:3000/carts?user_id=1, you'll get
     ]
 }
 ```
->>>>>>> c46f99ae78698bde77a8a4ac03faceccdaf5f0ab
+Now if you go to http://localhost:3000/products?age=3_to_5, you'll get
+```
+[
+    {
+        "product_id": 9,
+        "product_name": "Kettrike Tricycle",
+        "gender": "Neutral",
+        "age": "3_to_5",
+        "price": 249.95,
+        "availability": "",
+        "brand": "SportsFun"
+    },
+    {
+        "product_id": 6,
+        "product_name": "Princess Palace",
+        "gender": "Female",
+        "age": "3_to_5",
+        "price": 24.95,
+        "availability": "InStock",
+        "brand": "CoolKidz"
+    },
+]
+```
+
+Now if you go to http://localhost:3000/api/v1/filter, you'll get
+```
+{
+    "age": [
+        "baby",
+        "Toddler",
+        "3_to_5",
+        "6_to_8",
+        "over8"
+    ],
+    "gender": [
+        "Female",
+        "Male",
+        "Neutral",
+        ""
+    ]
+}
+```
+
