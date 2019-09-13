@@ -5,7 +5,7 @@ import ButtonWithIcon from '../ButtonWithIcon'
 import SelectWithDropdown from '../SelectWithDropdown'
 import SearchInput from '../SearchInput'
 
-const Header = ({classes, amount, handleSubmit}) => {
+const Header = ({classes, amount, handleSubmit, filters}) => {
   const [searchValue, setSearchValue] = useState('')
   const [filter, setFilter] = useState('')
   const handleSearchChange = event => {

@@ -3,12 +3,14 @@ import Header from '../../modules/common/Header'
 import ProductList from '../../modules/products/components/ProductList'
 
 const ProductPage = ({
-
+  userShoppingCart,
+  filters
 }) => {
 
+  console.log('productPageProps:', userShoppingCart, filters)
   return (
     <div>
-      <Header />
+      <Header filters={filters} />
     </div>
   )
 }

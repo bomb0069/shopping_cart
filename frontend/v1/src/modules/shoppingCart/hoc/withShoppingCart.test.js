@@ -10,8 +10,11 @@ describe('<withShoppingCart /> test', () => {
         let getUserShoppingCart = jest.fn(() => {
             Promise.resolve([])
         })
+        let getFilters = jest.fn(() => {
+            Promise.resolve([])
+        })
         const MockComponent = jest.fn()
-        const Component = withShoppingCart(MockComponent, getUserShoppingCart)
+        const Component = withShoppingCart(MockComponent, getUserShoppingCart, getFilters)
         
         act(() => {
             wrapper = shallow(<Component />)
@@ -32,9 +35,11 @@ describe('<withShoppingCart /> test', () => {
         let getUserShoppingCart = jest.fn(() => {
             Promise.resolve(expectData)
         })
-
+        let getFilters = jest.fn(() => {
+            Promise.resolve([])
+        })
         const MockComponent = () => <div />
-        const Component = withShoppingCart(MockComponent, getUserShoppingCart)
+        const Component = withShoppingCart(MockComponent, getUserShoppingCart, getFilters)
         wrapper = mount(<Component />)
         // expect(wrapper.prop('data')).toEqual(expectData)
     })

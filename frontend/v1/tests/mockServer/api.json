@@ -40,7 +40,7 @@
     { "product_id": 17, "product_name": "Star Wars Darth Vader Lego", "gender": "Male", "age":"6_to_8", "price":39.95,"availability":"InStock", "brand":"GeekToys" },
     { "product_id": 12, "product_name": "Twilight Board Game", "gender": "Neutral", "age":"over8", "price":24.95,"availability":"InStock", "brand":"GeekToys" }
   ],
-  "filter": {
+  "filters": {
     "age": ["baby", "Toddler", "3_to_5", "6_to_8", "over8"],
     "gender": ["Female", "Male", "Neutral", ""]
   }
