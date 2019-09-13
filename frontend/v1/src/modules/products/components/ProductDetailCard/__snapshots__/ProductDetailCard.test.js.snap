@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProductCard /> should render with no errors 1`] = `
+<WithStyles(ForwardRef(Paper))>
+  <WithStyles(ForwardRef(Grid))
+    container={true}
+    spacing={1}
+  >
+    <WithStyles(ForwardRef(Grid))
+      item={true}
+      xs={4}
+    >
+      <WithStyles(ForwardRef(Grid))
+        item={true}
+        sm={12}
+      >
+        <img
+          src="https://s3-ap-southeast-1.amazonaws.com/assets-eng-prod/products/th_310093-3.jpg"
+        />
+      </WithStyles(ForwardRef(Grid))>
+    </WithStyles(ForwardRef(Grid))>
+    <WithStyles(ForwardRef(Grid))
+      item={true}
+      xs={4}
+    >
+      <p>
+        Name: 
+        Princess Palace
+      </p>
+      <p>
+        Gender: 
+        Female
+      </p>
+      <p>
+        Age: 
+        3_to_5
+      </p>
+      <p>
+        $
+        24.95
+      </p>
+      <p>
+        In Stock
+      </p>
+    </WithStyles(ForwardRef(Grid))>
+    <WithStyles(ForwardRef(Grid))
+      item={true}
+      xs={4}
+    >
+      <WithStyles(ForwardRef(Button))
+        onClick={[Function]}
+      >
+        Add to Cart
+      </WithStyles(ForwardRef(Button))>
+    </WithStyles(ForwardRef(Grid))>
+  </WithStyles(ForwardRef(Grid))>
+</WithStyles(ForwardRef(Paper))>
+`;
