@@ -3,7 +3,7 @@ import classNames from 'classnames'
 import { Paper, Grid, Button } from '@material-ui/core'
 
 const ProductCard = ({
-  imgUrl,
+  imgUrl = 'https://www.mockuptiger.com/wp-content/uploads/2018/03/image-666.jpg',
   id,
   name,
   gender,
