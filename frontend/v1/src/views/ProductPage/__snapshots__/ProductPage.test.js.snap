@@ -2,28 +2,11 @@
 
 exports[`<ProductPage /> should render with no errors 1`] = `
 <div>
-  <WithStyles(Header) />
+  <WithStyles(Header)
+    handleSubmit={[Function]}
+  />
   <ProductList
-    productItems={
-      Array [
-        Object {
-          "age": "3_to_5",
-          "availability": "InStock",
-          "gender": "Female",
-          "imgUrl": "https://cdn.shopify.com/s/files/1/1012/1116/products/Baby_Shark_plush_front2_1024x1024.jpg?v=1527582094",
-          "name": "43 Piece dinner Set",
-          "price": 12.95,
-        },
-        Object {
-          "age": "3_to_5",
-          "availability": "InStock",
-          "gender": "Female",
-          "imgUrl": "https://www.biggamehunters.co.uk/acatalog/princess-palace09.jpg",
-          "name": "Princess Palace",
-          "price": 24.95,
-        },
-      ]
-    }
+    productItems={Array []}
   />
 </div>
 `;

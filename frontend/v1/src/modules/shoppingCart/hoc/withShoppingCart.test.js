@@ -40,7 +40,9 @@ describe('<withShoppingCart /> test', () => {
         })
         const MockComponent = () => <div />
         const Component = withShoppingCart(MockComponent, getUserShoppingCart, getFilters)
-        wrapper = mount(<Component />)
+        act(() => {
+            wrapper = shallow(<Component />)
+        });
         // expect(wrapper.prop('data')).toEqual(expectData)
     })
 })

@@ -2,21 +2,36 @@
 
 exports[`<SearchResultsPage /> should render with Header 1`] = `
 <div>
-  <WithStyles(Header) />
-  <ProductList />
+  <WithStyles(Header)
+    amount={0}
+    handleSubmit={[Function]}
+  />
+  <ProductListDetailCard
+    productItems={Array []}
+  />
 </div>
 `;
 
-exports[`<SearchResultsPage /> should render with ProductList 1`] = `
+exports[`<SearchResultsPage /> should render with ProductListDetailCard 1`] = `
 <div>
-  <WithStyles(Header) />
-  <ProductList />
+  <WithStyles(Header)
+    amount={0}
+    handleSubmit={[Function]}
+  />
+  <ProductListDetailCard
+    productItems={Array []}
+  />
 </div>
 `;
 
 exports[`<SearchResultsPage /> should render with no errors 1`] = `
 <div>
-  <WithStyles(Header) />
-  <ProductList />
+  <WithStyles(Header)
+    amount={0}
+    handleSubmit={[Function]}
+  />
+  <ProductListDetailCard
+    productItems={Array []}
+  />
 </div>
 `;

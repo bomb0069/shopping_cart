@@ -31,7 +31,7 @@ const ProductPage = ({ classes, history, userShoppingCart, filters }) => {
   return (
     <div>
       <Header filters={filters} handleSubmit={handleSubmit} amount={userShoppingCart && userShoppingCart.items && userShoppingCart.items.length}/>
-      <ProductList className={classes.root} productItems={products}/>
+      <ProductList className={classes} productItems={products}/>
     </div>
   )
 }

@@ -4,7 +4,7 @@ import toJson from 'enzyme-to-json'
 
 import SearchResultsPage from './SearchResultsPage'
 import Header from '../../modules/common/Header'
-import ProductList from '../../modules/products/components/ProductList'
+import ProductListDetailCard from '../../modules/products/components/ProductListDetailCard'
 
 
 describe('<SearchResultsPage />', () => {
@@ -26,9 +26,9 @@ describe('<SearchResultsPage />', () => {
     expect(component.find(Header).length).toEqual(1)
   })
 
-  it('should render with ProductList', () => {
+  it('should render with ProductListDetailCard', () => {
     expect(toJson(component)).toMatchSnapshot()
 
-    expect(component.find(ProductList).length).toEqual(1)
+    expect(component.find(ProductListDetailCard).length).toEqual(1)
   })
 })

@@ -14,10 +14,10 @@ const ProductList = ({
           item
           xs={12}
           sm={4}
-          key={item.product_id}
+          key={'grid' + item.product_id}
         >
           <ProductCard
-            
+            key={item.product_id}
             {...item}
           />
         </Grid>
