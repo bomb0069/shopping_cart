@@ -111,7 +111,7 @@ json-server --watch db.json --routes routes.json
 ```
 
 ### Example
-Now if you go to http://localhost:3000/carts?user_id=1, you'll get
+Now if you go to http://localhost:3000/api/v1/carts?user_id=1, you'll get
 ```
 {
     "user_id": 1,
@@ -124,7 +124,7 @@ Now if you go to http://localhost:3000/carts?user_id=1, you'll get
     ]
 }
 ```
-Now if you go to http://localhost:3000/products?age=3_to_5, you'll get
+Now if you go to http://localhost:3000/api/v1/products?age=3_to_5, you'll get
 ```
 [
     {
