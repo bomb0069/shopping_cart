@@ -1,11 +1,9 @@
 import React from 'react'
 import { 
   TextField,
-  withStyles,
   IconButton,
   Grid
 } from '@material-ui/core'
-import style from './styles'
 import SearchIcon from '@material-ui/icons/Search'
 
 const SearchInput = ({
@@ -44,4 +42,4 @@ const SearchInput = ({
     )
 }
 
-export default withStyles(style)(SearchInput)
+export default (SearchInput)

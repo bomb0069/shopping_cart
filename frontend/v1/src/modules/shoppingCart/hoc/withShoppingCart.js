@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 const withShoppingCart = (Component, userShoppingCartApi, getFilters) => {
 
-    return () => {
+    return (props) => {
         const user = {
           id: 1,
           name: 'rittichai timrattanakul',
@@ -22,7 +22,7 @@ const withShoppingCart = (Component, userShoppingCartApi, getFilters) => {
           runFunction()
         }, [])
 
-        return <Component userShoppingCart={userShoppingCart} filters={filters} />
+        return <Component userShoppingCart={userShoppingCart} filters={filters} {...props} />
     }
 }
 

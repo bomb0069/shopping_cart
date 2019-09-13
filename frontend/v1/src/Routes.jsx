@@ -7,9 +7,8 @@ import { getShoppingCart, getFilters } from './modules/shoppingCart/actions'
 import withShoppingCart from './modules/shoppingCart/hoc/withShoppingCart'
 
 // Views
-import {
-    ProductPage
-} from './views'
+import ProductPage from './views/ProductPage'
+import SearchResultsPage from './views/SearchResultsPage'
 
 export default class Routes extends Component {
   render() {
@@ -24,6 +23,11 @@ export default class Routes extends Component {
           component={withShoppingCart(ProductCard, getShoppingCart, getFilters)}
           exact
           path="/productFilter"
+        />
+        <Route
+          component={SearchResultsPage}
+          exact
+          path="/search-results"
         />
         <Redirect to="/product" />
       </Switch>

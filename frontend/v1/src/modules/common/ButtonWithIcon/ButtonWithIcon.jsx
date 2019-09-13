@@ -1,6 +1,5 @@
 import React from 'react'
-import styles from './styles'
-import { withStyles, IconButton, Badge } from '@material-ui/core'
+import { IconButton, Badge } from '@material-ui/core'
 import { ShoppingCart as ShoppingCartIcon } from '@material-ui/icons'
 
 const ButtonWithIcon = ({ classes, id, amount, icon, onClick }) => {
@@ -22,5 +21,5 @@ const ButtonWithIcon = ({ classes, id, amount, icon, onClick }) => {
   )
 }
 
-export default withStyles(styles)(ButtonWithIcon)
+export default (ButtonWithIcon)
 

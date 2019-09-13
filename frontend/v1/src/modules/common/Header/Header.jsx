@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-import {withStyles, Paper, Grid} from '@material-ui/core'
-import styles from './styles'
+import {Paper, Grid} from '@material-ui/core'
 import ButtonWithIcon from '../ButtonWithIcon'
 import SelectWithDropdown from '../SelectWithDropdown'
 import SearchInput from '../SearchInput'
@@ -26,7 +25,7 @@ const Header = ({classes, amount, handleSubmit, filters}) => {
         <Grid item xs={10}>
           <Grid container spacing={1}>
             <Grid item xs={12}>
-              <SelectWithDropdown handleChange={handleAgeChange} value={age} />
+              <SelectWithDropdown items={filters && filters.age} handleChange={handleAgeChange} value={age} />
             </Grid>
             <Grid item xs={12}>
               <SearchInput id={'search-field'} value={searchValue} handleChange={handleSearchChange} handleButtonClick={handleSearch} />
@@ -41,4 +40,4 @@ const Header = ({classes, amount, handleSubmit, filters}) => {
   )
 }
 
-export default withStyles(styles)(Header)
+export default (Header)
