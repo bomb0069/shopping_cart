@@ -1,0 +1,47 @@
+{
+  "carts": {
+    "user_id": 1,
+    "items":[{
+      "product_id": 6,
+      "product_name": "Princess Palace",
+      "product_price": 24.95
+    }]
+  },
+  "products": [
+    { "product_id": 2, "product_name": "43 Piece dinner Set", "gender": "Female", "age":"3_to_5", "price":12.95,"availability":"InStock", "brand":"CoolKidz" },
+    { "product_id": 1, "product_name": "Balance Training Bicycle", "gender": "Neutral", "age":"3_to_5", "price":119.95,"availability":"InStock", "brand":"SportsFun" },
+    { "product_id": 7, "product_name": "Best Friends Forever Magnetic Dress Up", "gender": "Female", "age":"3_to_5", "price":24.95,"availability":"InStock", "brand":"CoolKidz" },
+    { "product_id": 8, "product_name": "City Gargage Truck Lego", "gender": "Neutral", "age":"3_to_5", "price":19.95,"availability":"", "brand":"Lego" },
+    { "product_id": 20, "product_name": "Creator Beach House Lego", "gender": "Neutral", "age":"6_to_8", "price":39.95,"availability":"", "brand":"Lego" },
+    { "product_id": 23, "product_name": "Dancing Alligator", "gender": "Neutral", "age":"Baby", "price":19.95,"availability":"InStock", "brand":"CoolKidz" },
+    { "product_id": 11, "product_name": "Earth DVD Game", "gender": "Neutral", "age":"over8", "price":34.99,"availability":"InStock", "brand":"VideoVroom" },
+    { "product_id": 30, "product_name": "Fisher-Price stroller", "gender": "Female", "age":"Toddler", "price":25.99,"availability":"InStock", "brand":"CoolKidz" },
+    { "product_id": 19, "product_name": "Gourmet Cupcake Maker", "gender": "Female", "age":"6_to_8", "price":39.95,"availability":"InStock", "brand":"CoolKidz" },
+    { "product_id": 4, "product_name": "Hoppity Ball 26 inch", "gender": "Neutral", "age":"3_to_5", "price":29.95,"availability":"InStock", "brand":"SportsFun" },
+    { "product_id": 3, "product_name": "Horses and Unicorns Set", "gender": "Neutral", "age":"3_to_5", "price":24.95,"availability":"InStock", "brand":"CoolKidz" },
+    { "product_id": 21, "product_name": "Jacques the Peacock Play and Grow", "gender": "Neutral", "age":"Toddler", "price":12.95,"availability":"InStock", "brand":"CoolKidz" },
+    { "product_id": 9, "product_name": "Kettrike Tricycle", "gender": "Neutral", "age":"3_to_5", "price":249.95,"availability":"", "brand":"SportsFun" },
+    { "product_id": 26, "product_name": "Les Dollie Toffee Apple", "gender": "Female", "age":"Toddler", "price":24.95,"availability":"InStock", "brand":"CoolKidz" },
+    { "product_id": 24, "product_name": "Mashaka the Monkey", "gender": "Neutral", "age":"Baby", "price":36.95,"availability":"InStock", "brand":"BarnyardBlast" },
+    { "product_id": 28, "product_name": "Melody Express Musical Train", "gender": "Male", "age":"Toddler", "price":42.95,"availability":"InStock", "brand":"Modelz" },
+    { "product_id": 31, "product_name": "Mortimer the Moose Play and Grow", "gender": "Neutral", "age":"Toddler", "price":12.95,"availability":"InStock", "brand":"CoolKidz" },
+    { "product_id": 29, "product_name": "My First LEGO DUPLO Set", "gender": "", "age":"Toddler", "price":19.95,"availability":"", "brand":"Lego" },
+    { "product_id": 22, "product_name": "Nutbrown Hare", "gender": "Neutral", "age":"Baby", "price":12.99,"availability":"SoldOut", "brand":"CoolKidz" },
+    { "product_id": 14, "product_name": "OMG - Gossip Girl Board Game", "gender": "Female", "age":"over8", "price":24.95,"availability":"InStock", "brand":"GeekToys" },
+    { "product_id": 6, "product_name": "Princess Palace", "gender": "Female", "age":"3_to_5", "price":24.95,"availability":"InStock", "brand":"CoolKidz" },
+    { "product_id": 10, "product_name": "Princess Training Bicycle", "gender": "Female", "age":"3_to_5", "price":119.95,"availability":"", "brand":"SportsFun" },
+    { "product_id": 15, "product_name": "Sailboat", "gender": "Male", "age":"over8", "price":24.95,"availability":"InStock", "brand":"CoolKidz" },
+    { "product_id": 27, "product_name": "Sand Play Set", "gender": "Neutral", "age":"Toddler", "price":24.95,"availability":"InStock", "brand":"Modelz" },
+    { "product_id": 16, "product_name": "Scrabble", "gender": "Neutral", "age":"over8", "price":19.95,"availability":"InStock", "brand":"GeekToys" },
+    { "product_id": 13, "product_name": "Settlers of Catan Board Game", "gender": "Neutral", "age":"over8", "price":44.95,"availability":"InStock", "brand":"GeekToys" },
+    { "product_id": 25, "product_name": "Sleep Sheep", "gender": "Neutral", "age":"Baby", "price":39.00,"availability":"InStock", "brand":"BarnyardBlast" },
+    { "product_id": 5, "product_name": "Sleeping Queens Board Game", "gender": "Female", "age":"3_to_5", "price":12.95,"availability":"", "brand":"CoolKidz" },
+    { "product_id": 18, "product_name": "Snoopy Sno-Cone Machine", "gender": "Neutral", "age":"6_to_8", "price":24.95,"availability":"InStock", "brand":"Modelz" },
+    { "product_id": 17, "product_name": "Star Wars Darth Vader Lego", "gender": "Male", "age":"6_to_8", "price":39.95,"availability":"InStock", "brand":"GeekToys" },
+    { "product_id": 12, "product_name": "Twilight Board Game", "gender": "Neutral", "age":"over8", "price":24.95,"availability":"InStock", "brand":"GeekToys" }
+  ],
+  "filter": {
+    "age": ["baby", "Toddler", "3_to_5", "6_to_8", "over8"],
+    "gender": ["Female", "Male", "Neutral", ""]
+  }
+}

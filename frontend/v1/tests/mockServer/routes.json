@@ -1,4 +1,5 @@
 {
     "/api/v1/carts": "/carts",
-    "/api/v1/fiter": "/filter"
+    "/api/v1/filter": "/filter",
+    "/api/v1/products": "/products"
 }
